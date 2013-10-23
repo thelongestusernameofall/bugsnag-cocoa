@@ -61,7 +61,6 @@ void handle_signal(int signalReceived) {
     if (notifier) {
         // We dont want to be double notified
         remove_handlers();
-        
         [notifier notifySignal:signalReceived];
     }
     

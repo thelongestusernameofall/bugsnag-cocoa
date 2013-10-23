@@ -320,11 +320,15 @@
     Class reachabilityClass = NSClassFromString(@"Reachability");
     if (reachabilityClass == nil) reachabilityClass = NSClassFromString(@"BugsnagReachability");
     if (reachabilityClass == nil) return nil;
-    
+
+    // If the class is there, the selectors will work fine, so we can safely ignore this warning.
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
     id reachability = [reachabilityClass performSelector:@selector(reachabilityForInternetConnection)];
     [reachability performSelector:@selector(startNotifier)];
     NSString *returnValue = [reachability performSelector:@selector(currentReachabilityString)];
     [reachability performSelector:@selector(stopNotifier)];
+#pragma clang diagnostic pop
     
     return returnValue;
 }
@@ -347,13 +351,13 @@
     uint64_t pagesFree = 0;
     size_t sysCtlSize = sizeof(uint64_t);
     if (!sysctlbyname("hw.memsize", &total, &sysCtlSize, NULL, 0)) {
-        [memoryStats setObject:[self fileSize:[NSNumber numberWithInteger:total]] forKey:@"Total"];
+        [memoryStats setObject:[self fileSize:[NSNumber numberWithLongLong:total]] forKey:@"Total"];
     }
     
     if (!sysctlbyname("vm.page_free_count", &pagesFree, &sysCtlSize, NULL, 0)) {
         if (!sysctlbyname("hw.pagesize", &pageSize, &sysCtlSize, NULL, 0)) {
-            [memoryStats setObject:[self fileSize:[NSNumber numberWithInteger:pagesFree*pageSize]] forKey:@"Free"];
-            [memoryStats setObject:[self fileSize:[NSNumber numberWithInteger:total-(pagesFree*pageSize)]] forKey:@"Used"];
+            [memoryStats setObject:[self fileSize:[NSNumber numberWithLongLong:pagesFree*pageSize]] forKey:@"Free"];
+            [memoryStats setObject:[self fileSize:[NSNumber numberWithLongLong:total-(pagesFree*pageSize)]] forKey:@"Used"];
         }
     }
     
