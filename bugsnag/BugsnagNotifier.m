@@ -239,12 +239,15 @@
         [request setValue:@"application/json" forHTTPHeaderField:@"content-type"];
 
         NSURLResponse* response = nil;
+        NSLog(@"Sending: %@",[[NSString alloc] initWithData:payload encoding:NSUTF8StringEncoding]);
         [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:nil];
 
         NSInteger statusCode = [((NSHTTPURLResponse *)response) statusCode];
         if (statusCode != 200) {
+            NSLog(@"Not sent!");
             BugsnagLog(@"Bad response from bugsnag received: %ld.", (long)statusCode);
         } else {
+            NSLog(@"Sent!");
             return YES;
         }
     }

@@ -45,28 +45,33 @@ static int signals[] = {
 static int signals_count = (sizeof(signals) / sizeof(signals[0]));
 
 void remove_handlers(void);
-void handle_signal(int);
+void handle_signal(int, siginfo_t *, void *);
 void handle_exception(NSException *);
 
 void remove_handlers() {
     for (NSUInteger i = 0; i < signals_count; i++) {
-        int signalType = signals[i];
-        signal(signalType, NULL);
+        struct sigaction action;
+        
+        memset(&action, 0, sizeof(action));
+        action.sa_handler = SIG_DFL;
+        sigemptyset(&action.sa_mask);
+        
+        sigaction(signals[i], &action, NULL);
     }
     NSSetUncaughtExceptionHandler(NULL);
 }
 
 // Handles a raised signal
-void handle_signal(int signalReceived) {
+void handle_signal(int signo, siginfo_t *info, void *uapVoid) {
     if (notifier) {
         // We dont want to be double notified
         remove_handlers();
         
-        [notifier notifySignal:signalReceived];
+        [notifier notifySignal:signo];
     }
     
     //Propagate the signal back up to take the app down
-    raise(signalReceived);
+    raise(signo);
 }
 
 // Handles an uncaught exception
@@ -98,10 +103,28 @@ void handle_exception(NSException *exception) {
     // Register the notifier to receive exceptions and signals
     NSSetUncaughtExceptionHandler(&handle_exception);
     
+    stack_t stack;
+    stack.ss_size = SIGSTKSZ;
+    stack.ss_sp = malloc(stack.ss_size);
+    stack.ss_flags = 0;
+    
+    if (sigaltstack(&stack, 0) < 0) {
+        BugsnagLog(@"Unable to generate sigalstack: %d", errno);
+    }
+    
+    struct sigaction action;
+    struct sigaction prev_action;
+    
+    /* Configure action */
+    memset(&action, 0, sizeof(action));
+    action.sa_flags = SA_SIGINFO|SA_ONSTACK;
+    sigemptyset(&action.sa_mask);
+    action.sa_sigaction = &handle_signal;
+    
     for (NSUInteger i = 0; i < signals_count; i++) {
         int signalType = signals[i];
-        if (signal(signalType, handle_signal) == SIG_ERR) {
-            BugsnagLog(@"Unable to register signal handler for %s", strsignal(signalType));
+        if (sigaction(signalType, &action, &prev_action) != 0) {
+            BugsnagLog(@"Unable to register signal handler for %s: %d", strsignal(signalType), errno);
         }
     }
 }
