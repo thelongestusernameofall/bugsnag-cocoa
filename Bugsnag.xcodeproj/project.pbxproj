@@ -201,18 +201,18 @@
 /* Begin PBXFileReference section */
 		79FD0D031A0C150E0050DBC5 /* libBugsnag-Device.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libBugsnag-Device.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79FD0D1F1A0C151E0050DBC5 /* libBugsnag-Simulator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libBugsnag-Simulator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		79FD0D541A0C168B0050DBC5 /* Bugsnag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bugsnag.h; path = Source/Bugsnag/Bugsnag.h; sourceTree = "<group>"; };
-		79FD0D551A0C168B0050DBC5 /* Bugsnag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bugsnag.m; path = Source/Bugsnag/Bugsnag.m; sourceTree = "<group>"; };
-		79FD0D561A0C168B0050DBC5 /* BugsnagConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BugsnagConfiguration.h; path = Source/Bugsnag/BugsnagConfiguration.h; sourceTree = "<group>"; };
-		79FD0D571A0C168B0050DBC5 /* BugsnagConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagConfiguration.m; path = Source/Bugsnag/BugsnagConfiguration.m; sourceTree = "<group>"; };
-		79FD0D581A0C168B0050DBC5 /* BugsnagIosNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BugsnagIosNotifier.h; path = Source/Bugsnag/BugsnagIosNotifier.h; sourceTree = "<group>"; };
-		79FD0D591A0C168B0050DBC5 /* BugsnagIosNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagIosNotifier.m; path = Source/Bugsnag/BugsnagIosNotifier.m; sourceTree = "<group>"; };
-		79FD0D5A1A0C168B0050DBC5 /* BugsnagMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BugsnagMetaData.h; path = Source/Bugsnag/BugsnagMetaData.h; sourceTree = "<group>"; };
-		79FD0D5B1A0C168B0050DBC5 /* BugsnagMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagMetaData.m; path = Source/Bugsnag/BugsnagMetaData.m; sourceTree = "<group>"; };
-		79FD0D5C1A0C168B0050DBC5 /* BugsnagNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BugsnagNotifier.h; path = Source/Bugsnag/BugsnagNotifier.h; sourceTree = "<group>"; };
-		79FD0D5D1A0C168B0050DBC5 /* BugsnagNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagNotifier.m; path = Source/Bugsnag/BugsnagNotifier.m; sourceTree = "<group>"; };
-		79FD0D5E1A0C168B0050DBC5 /* BugsnagSink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BugsnagSink.h; path = Source/Bugsnag/BugsnagSink.h; sourceTree = "<group>"; };
-		79FD0D5F1A0C168B0050DBC5 /* BugsnagSink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagSink.m; path = Source/Bugsnag/BugsnagSink.m; sourceTree = "<group>"; };
+		79FD0D541A0C168B0050DBC5 /* Bugsnag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bugsnag.h; path = source/Bugsnag.h; sourceTree = "<group>"; };
+		79FD0D551A0C168B0050DBC5 /* Bugsnag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bugsnag.m; path = source/Bugsnag.m; sourceTree = "<group>"; };
+		79FD0D561A0C168B0050DBC5 /* BugsnagConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BugsnagConfiguration.h; path = source/BugsnagConfiguration.h; sourceTree = "<group>"; };
+		79FD0D571A0C168B0050DBC5 /* BugsnagConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagConfiguration.m; path = source/BugsnagConfiguration.m; sourceTree = "<group>"; };
+		79FD0D581A0C168B0050DBC5 /* BugsnagIosNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BugsnagIosNotifier.h; path = source/BugsnagIosNotifier.h; sourceTree = "<group>"; };
+		79FD0D591A0C168B0050DBC5 /* BugsnagIosNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagIosNotifier.m; path = source/BugsnagIosNotifier.m; sourceTree = "<group>"; };
+		79FD0D5A1A0C168B0050DBC5 /* BugsnagMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BugsnagMetaData.h; path = source/BugsnagMetaData.h; sourceTree = "<group>"; };
+		79FD0D5B1A0C168B0050DBC5 /* BugsnagMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagMetaData.m; path = source/BugsnagMetaData.m; sourceTree = "<group>"; };
+		79FD0D5C1A0C168B0050DBC5 /* BugsnagNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BugsnagNotifier.h; path = source/BugsnagNotifier.h; sourceTree = "<group>"; };
+		79FD0D5D1A0C168B0050DBC5 /* BugsnagNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagNotifier.m; path = source/BugsnagNotifier.m; sourceTree = "<group>"; };
+		79FD0D5E1A0C168B0050DBC5 /* BugsnagSink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BugsnagSink.h; path = source/BugsnagSink.h; sourceTree = "<group>"; };
+		79FD0D5F1A0C168B0050DBC5 /* BugsnagSink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagSink.m; path = source/BugsnagSink.m; sourceTree = "<group>"; };
 		79FD0D6E1A0C16B80050DBC5 /* KSCrashReportFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCrashReportFilter.h; path = KSCrash/Source/KSCrash/Reporting/Filters/KSCrashReportFilter.h; sourceTree = "<group>"; };
 		79FD0D701A0C16C70050DBC5 /* KSCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCrash.h; sourceTree = "<group>"; };
 		79FD0D711A0C16C70050DBC5 /* KSCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCrash.m; sourceTree = "<group>"; };
@@ -300,17 +300,16 @@
 		79FD0E171A0C18F30050DBC5 /* Bugsnag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bugsnag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79FD0E1A1A0C18F30050DBC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79FD0E211A0C18F30050DBC5 /* BugsnagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BugsnagTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		79FD0E271A0C18F30050DBC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79FD0E281A0C18F30050DBC5 /* BugsnagTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BugsnagTests.m; sourceTree = "<group>"; };
+		79FD0E271A0C18F30050DBC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../tests/Info.plist; sourceTree = "<group>"; };
+		79FD0E281A0C18F30050DBC5 /* BugsnagTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BugsnagTests.m; path = ../tests/BugsnagTests.m; sourceTree = "<group>"; };
 		932642CB1AB2494F0006C447 /* BugsnagOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BugsnagOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9326431D1AB24D820006C447 /* BugsnagOSXNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BugsnagOSXNotifier.h; path = Source/Bugsnag/BugsnagOSXNotifier.h; sourceTree = "<group>"; };
-		9326431E1AB24D820006C447 /* BugsnagOSXNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagOSXNotifier.m; path = Source/Bugsnag/BugsnagOSXNotifier.m; sourceTree = "<group>"; };
-		938594C31A2686DD0082E445 /* BugsnagCrashReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BugsnagCrashReport.h; path = Source/Bugsnag/BugsnagCrashReport.h; sourceTree = "<group>"; };
-		938594C41A2686DD0082E445 /* BugsnagCrashReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagCrashReport.m; path = Source/Bugsnag/BugsnagCrashReport.m; sourceTree = "<group>"; };
-		938595BA1A2D51FE0082E445 /* BugsnagSinkTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BugsnagSinkTests.m; sourceTree = "<group>"; };
-		938595BC1A2D52400082E445 /* BugsnagCrashReportTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BugsnagCrashReportTests.m; sourceTree = "<group>"; };
-		938595BE1A2D54D40082E445 /* report.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = report.json; sourceTree = "<group>"; };
-		9385968C1A2EBDCF0082E445 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/usr/lib/libc++.dylib"; sourceTree = DEVELOPER_DIR; };
+		9326431D1AB24D820006C447 /* BugsnagOSXNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BugsnagOSXNotifier.h; path = source/BugsnagOSXNotifier.h; sourceTree = "<group>"; };
+		9326431E1AB24D820006C447 /* BugsnagOSXNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagOSXNotifier.m; path = source/BugsnagOSXNotifier.m; sourceTree = "<group>"; };
+		938594C31A2686DD0082E445 /* BugsnagCrashReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BugsnagCrashReport.h; path = source/BugsnagCrashReport.h; sourceTree = "<group>"; };
+		938594C41A2686DD0082E445 /* BugsnagCrashReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagCrashReport.m; path = source/BugsnagCrashReport.m; sourceTree = "<group>"; };
+		938595BA1A2D51FE0082E445 /* BugsnagSinkTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagSinkTests.m; path = ../tests/BugsnagSinkTests.m; sourceTree = "<group>"; };
+		938595BC1A2D52400082E445 /* BugsnagCrashReportTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagCrashReportTests.m; path = ../tests/BugsnagCrashReportTests.m; sourceTree = "<group>"; };
+		938595BE1A2D54D40082E445 /* report.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = report.json; path = ../tests/report.json; sourceTree = "<group>"; };
 		93C8640D1B578D0900058362 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libc++.dylib"; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -358,11 +357,10 @@
 		79659E101A0AFFF800280978 = {
 			isa = PBXGroup;
 			children = (
+				93CF94F91B66E95000D1558C /* Source */,
+				79FD0E1A1A0C18F30050DBC5 /* Info.plist */,
 				93C8640D1B578D0900058362 /* libc++.dylib */,
-				9326431C1AB24D680006C447 /* BugsnagOSX */,
-				9385968C1A2EBDCF0082E445 /* libc++.dylib */,
 				79FD0D6D1A0C16980050DBC5 /* KSCrash */,
-				79FD0D6C1A0C16920050DBC5 /* Bugsnag */,
 				79FD0E251A0C18F30050DBC5 /* BugsnagTests */,
 				79FD0D041A0C150E0050DBC5 /* Products */,
 			);
@@ -378,28 +376,6 @@
 				932642CB1AB2494F0006C447 /* BugsnagOSX.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		79FD0D6C1A0C16920050DBC5 /* Bugsnag */ = {
-			isa = PBXGroup;
-			children = (
-				79FD0E191A0C18F30050DBC5 /* Supporting Files */,
-				79FD0D541A0C168B0050DBC5 /* Bugsnag.h */,
-				79FD0D551A0C168B0050DBC5 /* Bugsnag.m */,
-				79FD0D561A0C168B0050DBC5 /* BugsnagConfiguration.h */,
-				79FD0D571A0C168B0050DBC5 /* BugsnagConfiguration.m */,
-				79FD0D581A0C168B0050DBC5 /* BugsnagIosNotifier.h */,
-				79FD0D591A0C168B0050DBC5 /* BugsnagIosNotifier.m */,
-				79FD0D5A1A0C168B0050DBC5 /* BugsnagMetaData.h */,
-				79FD0D5B1A0C168B0050DBC5 /* BugsnagMetaData.m */,
-				79FD0D5C1A0C168B0050DBC5 /* BugsnagNotifier.h */,
-				79FD0D5D1A0C168B0050DBC5 /* BugsnagNotifier.m */,
-				79FD0D5E1A0C168B0050DBC5 /* BugsnagSink.h */,
-				79FD0D5F1A0C168B0050DBC5 /* BugsnagSink.m */,
-				938594C31A2686DD0082E445 /* BugsnagCrashReport.h */,
-				938594C41A2686DD0082E445 /* BugsnagCrashReport.m */,
-			);
-			name = Bugsnag;
 			sourceTree = "<group>";
 		};
 		79FD0D6D1A0C16980050DBC5 /* KSCrash */ = {
@@ -526,15 +502,6 @@
 			name = Reporting;
 			sourceTree = "<group>";
 		};
-		79FD0E191A0C18F30050DBC5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				79FD0E1A1A0C18F30050DBC5 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			path = Bugsnag;
-			sourceTree = "<group>";
-		};
 		79FD0E251A0C18F30050DBC5 /* BugsnagTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -555,13 +522,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9326431C1AB24D680006C447 /* BugsnagOSX */ = {
+		93CF94F91B66E95000D1558C /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				9326431D1AB24D820006C447 /* BugsnagOSXNotifier.h */,
 				9326431E1AB24D820006C447 /* BugsnagOSXNotifier.m */,
+				79FD0D541A0C168B0050DBC5 /* Bugsnag.h */,
+				79FD0D551A0C168B0050DBC5 /* Bugsnag.m */,
+				79FD0D561A0C168B0050DBC5 /* BugsnagConfiguration.h */,
+				79FD0D571A0C168B0050DBC5 /* BugsnagConfiguration.m */,
+				79FD0D581A0C168B0050DBC5 /* BugsnagIosNotifier.h */,
+				79FD0D591A0C168B0050DBC5 /* BugsnagIosNotifier.m */,
+				79FD0D5A1A0C168B0050DBC5 /* BugsnagMetaData.h */,
+				79FD0D5B1A0C168B0050DBC5 /* BugsnagMetaData.m */,
+				79FD0D5C1A0C168B0050DBC5 /* BugsnagNotifier.h */,
+				79FD0D5D1A0C168B0050DBC5 /* BugsnagNotifier.m */,
+				79FD0D5E1A0C168B0050DBC5 /* BugsnagSink.h */,
+				79FD0D5F1A0C168B0050DBC5 /* BugsnagSink.m */,
+				938594C31A2686DD0082E445 /* BugsnagCrashReport.h */,
+				938594C41A2686DD0082E445 /* BugsnagCrashReport.m */,
 			);
-			name = BugsnagOSX;
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1193,7 +1174,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Bugsnag/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1242,7 +1223,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Bugsnag/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1297,7 +1278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = BugsnagTests/Info.plist;
+				INFOPLIST_FILE = tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1347,7 +1328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = BugsnagTests/Info.plist;
+				INFOPLIST_FILE = tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1408,7 +1389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Bugsnag/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
@@ -1462,7 +1443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Bugsnag/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
