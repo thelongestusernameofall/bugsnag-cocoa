@@ -64,7 +64,7 @@ end
 
 Pod::Spec.new do |s|
   s.name         = "Bugsnag"
-  s.version      = "4.0.7"
+  s.version      = "4.0.8"
   s.summary      = "Cocoa notifier for SDK for bugsnag.com"
   s.homepage     = "https://bugsnag.com"
   s.license      = 'MIT'
@@ -79,13 +79,13 @@ Pod::Spec.new do |s|
 
   s.source_files = ["KSCrash/Source/KSCrash/Recording/**/*.{m,h,mm,c,cpp}",
                     "KSCrash/Source/KSCrash/Reporting/Filters/KSCrashReportFilter.h",
-                    "Source/Bugsnag/**/*.{m,h,mm,c,cpp}"]
+                    "source/**/*.{m,h,mm,c,cpp}"]
 
   s.exclude_files = ["KSCrash/Source/KSCrash/Recording/Tools/KSZombie.{h,m}"]
 
   s.requires_arc = true
 
-  s.public_header_files = ["Source/Bugsnag/*.h", "KSCrash/Source/KSCrash/Reporting/Filters/KSCrashReportFilter.h"]
+  s.public_header_files = ["source/*.h", "KSCrash/Source/KSCrash/Reporting/Filters/KSCrashReportFilter.h"]
 
   s.subspec 'no-arc' do |sp|
     sp.source_files = ["KSCrash/Source/KSCrash/Recording/Tools/KSZombie.{h,m}"]
