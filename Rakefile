@@ -6,7 +6,7 @@ task :clean do
 end
 
 desc 'Run the tests'
-task test: [:submodule] do
+task :test do
   sh "xcodebuild  -scheme Bugsnag -target Bugsnag -configuration Release test"
 end
 
@@ -25,13 +25,6 @@ task :build do
     sh "open ."
     sh "open https://github.com/bugsnag/bugsnag-cocoa/releases/new?tag=v#{version}"
   end
-end
-
-desc 'Vendor KSCrash'
-task :vendor do
-  sh "git submodule update --init --recursive"
-  sh "cp -r KSCrashModule/* KSCrash/"
-  sh "git add KSCrash && git commit -am 'vendor KSCrash'"
 end
 
 task :default => [:test]
