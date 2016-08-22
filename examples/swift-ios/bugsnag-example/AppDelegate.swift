@@ -27,6 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Bugsnag.startBugsnagWithApiKey("API-KEY")
+
+        let url = NSURL(string: "https://www.google.com")!
+        AnotherClass.httpGetBad(url, completionHandler: { (response, data, error) in
+            let exception = NSException(name: "Test", reason: "Test reason", userInfo: nil)
+            Bugsnag.notify(exception)
+        })
+
+
         return true
     }
 }

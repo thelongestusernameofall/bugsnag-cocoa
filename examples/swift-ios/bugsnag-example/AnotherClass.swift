@@ -38,4 +38,25 @@ class AnotherClass: NSObject {
     func crash3() {
         Bugsnag.notify(NSException(name: "Test error", reason: "Testing if this works", userInfo: nil))
     }
+
+    class func httpGetBad(url: NSURL, completionHandler: ((response: NSURLResponse?, data: NSData?, error: NSError?) -> Void)?) {
+        let request = NSMutableURLRequest(URL: url)
+        request.HTTPMethod = "GET"
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
+            if let callback = completionHandler {
+                callback(response: response, data: data, error: error) 
+            }
+        }
+        task.resume()
+    }
+
+    class func httpGetGood(url: NSURL, completionHandler: (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void) {
+        let request = NSMutableURLRequest(URL: url)
+        request.HTTPMethod = "GET"
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
+            let callback = completionHandler
+            callback(response: response, data: data, error: error)
+        }
+        task.resume()
+    }
 }
