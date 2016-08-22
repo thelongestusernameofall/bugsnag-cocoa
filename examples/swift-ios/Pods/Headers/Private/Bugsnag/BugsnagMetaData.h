@@ -1,0 +1,1 @@
+../../../../../../Source/BugsnagMetaData.h
