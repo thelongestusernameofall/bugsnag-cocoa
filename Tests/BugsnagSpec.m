@@ -72,6 +72,10 @@ describe(@"Bugsnag", ^{
         it(@"sends the exception reason", ^{
             [[expectFutureValue(requestExceptionValue(@"message")) shouldSoon] equal:@"no pilot"];
         });
+
+        it(@"sends the exception type", ^{
+            [[expectFutureValue(requestExceptionValue(@"type")) shouldSoon] equal:@"cocoa"];
+        });
     });
 
     describe(@"notify:block:", ^{
@@ -90,6 +94,12 @@ describe(@"Bugsnag", ^{
                 report.errorMessage = @"I forgot to pick up groceries";
                 report.metaData = @{ @"labels": @{ @"enabled": @"false" }};
                 report.breadcrumbs = breadcrumbs;
+
+                NSArray *frames = @[@{
+                    @"file": @"MyFile.mm",
+                    @"lineNumber": @487
+                }];
+                [report attachCustomStacktrace:frames withType:@"c++"];
             }];
         });
 
@@ -119,6 +129,17 @@ describe(@"Bugsnag", ^{
         
         it(@"sends the breadcrumbs", ^{
             [[expectFutureValue(requestEventKeyPath(@"breadcrumbs")) shouldSoon] equal:breadcrumbs];
+        });
+
+        it(@"sends the custom exception type", ^{
+            [[expectFutureValue(requestExceptionValue(@"type")) shouldSoon] equal:@"c++"];
+        });
+
+        it(@"sends the custom exception stacktrace", ^{
+            [[expectFutureValue(requestExceptionValue(@"stacktrace")) shouldSoon] equal:@[@{
+                @"file": @"MyFile.mm",
+                @"lineNumber": @487
+            }]];
         });
     });
 
