@@ -13,7 +13,7 @@ How to contribute
 Running the tests
 -----------------
 
-Run the tests using the default SDK (iOS 9.2) by using:
+Run the tests using the default SDK (iOS) by using:
 
     make test
 
